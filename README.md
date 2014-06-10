@@ -84,7 +84,7 @@ These buttons are hosted via ButBucket Websites, meaning all you need to do is i
 
 ## Completely copied and adapted from
 
-(https://github.com/mdo/github-buttons)
+https://github.com/mdo/github-buttons
 
 
 
