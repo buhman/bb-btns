@@ -2,26 +2,25 @@
 
 Showcase your BitBucket (repo's) success with these three simple, static buttons featuring dynamic watch, fork and follower counts and a link to your BitBucket repo or profile page.
 
-To get started, checkout <http://bitbucketbuttons.earthware.co.uk>!
-
+To get started, checkout <http://bb-btns.bitbucket.org>!
 
 
 ## Usage
 
-These buttons are hosted via GitHub Pages, meaning all you need to do is include an iframe and you're set. Once included, you can configure it with various options. Here's the include:
+These buttons are hosted via ButBucket Websites, meaning all you need to do is include an iframe and you're set. Once included, you can configure it with various options. Here's the include:
 
 ``` html
-<iframe src="http://ghbtns.com/github-btn.html?user=USERNAME&repo=REPONAME&type=BUTTONTYPE"
+<iframe src="http://bb-btns.bitbucket.org/bitbucket-btn.html?user=USERNAME&repo=REPONAME&type=BUTTONTYPE"
   allowtransparency="true" frameborder="0" scrolling="0" width="62" height="20"></iframe>
 ```
 
 ### Requirements
 
 `user`<br>
-GitHub username that owns the repo
+BitBucket username that owns the repo
 
 `repo`<br>
-GitHub repository to pull the forks and watchers counts
+BitBucket repository to pull the forks and watchers counts
 
 `type`<br>
 Type of button to show: `watch`, `fork`, or `follow`
@@ -41,100 +40,68 @@ Optional flag for using a larger button: *none* by default or `large`
 **Basic Watch button**
 
 ``` html
-<iframe src="http://ghbtns.com/github-btn.html?user=mdo&repo=github-buttons&type=watch"
+<iframe src="http://bb-btns.bitbucket.org/bitbucket-btn.html?user=mdo&repo=bb-btns.bitbucket.org&type=watch"
   allowtransparency="true" frameborder="0" scrolling="0" width="62" height="20"></iframe>
 ```
 
 **Basic Fork button**
 
 ``` html
-<iframe src="http://ghbtns.com/github-btn.html?user=mdo&repo=github-buttons&type=fork"
+<iframe src="http://bb-btns.bitbucket.org/bitbucket-btn.html?user=mdo&repo=bb-btns.bitbucket.org&type=fork"
   allowtransparency="true" frameborder="0" scrolling="0" width="53" height="20"></iframe>
 ```
 
 **Basic Follow button**
 
 ``` html
-<iframe src="http://ghbtns.com/github-btn.html?user=mdo&type=follow"
+<iframe src="http://bb-btns.bitbucket.org/bitbucket-btn.html?user=mdo&type=follow"
   allowtransparency="true" frameborder="0" scrolling="0" width="132" height="20"></iframe>
 ```
 
 **Watch with count**
 
 ``` html
-<iframe src="http://ghbtns.com/github-btn.html?user=mdo&repo=github-buttons&type=watch&count=true"
+<iframe src="http://bb-btns.bitbucket.org/bitbucket-btn.html?user=mdo&repo=bb-btns.bitbucket.org&type=watch&count=true"
   allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe>
 ```
 
 **Fork with count**
 
 ``` html
-<iframe src="http://ghbtns.com/github-btn.html?user=mdo&repo=github-buttons&type=fork&count=true"
+<iframe src="http://bb-btns.bitbucket.org/bitbucket-btn.html?user=mdo&repo=bb-btns.bitbucket.org&type=fork&count=true"
   allowtransparency="true" frameborder="0" scrolling="0" width="95" height="20"></iframe>
 ```
 
 **Follow with count**
 
 ``` html
-<iframe src="http://ghbtns.com/github-btn.html?user=mdo&type=follow&count=true"
+<iframe src="http://bb-btns.bitbucket.org/bitbucket-btn.html?user=mdo&type=follow&count=true"
   allowtransparency="true" frameborder="0" scrolling="0" width="165" height="20"></iframe>
 ```
 
 **Large Watch button with count**
 
 ``` html
-<iframe src="http://ghbtns.com/github-btn.html?user=mdo&repo=github-buttons&type=watch&count=true&size=large"
+<iframe src="http://bb-btns.bitbucket.org/bitbucket-btn.html?user=mdo&repo=bb-btns.bitbucket.org&type=watch&count=true&size=large"
   allowtransparency="true" frameborder="0" scrolling="0" width="170" height="30"></iframe>
 ```
 
 
+## Completely copied and adapted from
 
-## Limitations
-
-For the first versions, functionality is limited and some concessions were made:
-
-- Width and height must be specificed for all buttons (which actually adds some control for those with OCD like myself).
-- All attributes must be passed through via URL parameters.
-- CSS and javascript are all included in the same HTML file to reduce complexity and requests.
-
-**Usage with SSL**
-
-In order to avoid `insecure content` warnings when using GitHub Buttons on a page behind an SSL certificate, simply host a copy of the `github-btn.html` file on your secure directory and substitute your domain in the iframe include:
-
-``` html
-<iframe src="https://YOURDOMAIN.com/github-btn.html?user=USERNAME&repo=REPONAME&type=BUTTONTYPE"
-  allowtransparency="true" frameborder="0" scrolling="0" width="62" height="20"></iframe>
-```
-
-More refinement and functionalty is planned with open-sourcing--any help is always appreciated!
-
-
-
-## Bug tracker
-Have a bug? Please create an issue here on GitHub at <https://github.com/mdo/github-buttons/issues>.
-
-
-
-## See also
-
-- [ntkme/github-buttons](https://github.com/ntkme/github-buttons)
-
-
-
-## Twitter account
-Keep up to date on announcements and more by following Mark on Twitter, <a href="http://twitter.com/mdo">@mdo</a>.
+(https://github.com/mdo/github-buttons)
 
 
 
 ## Author
 
-**Mark Otto**
+**Earthware*
 
-+ http://twitter.com/mdo
-+ http://github.com/mdo
++ http://twitter.com/earthware
++ https://bitbucket.org/earthware
 
 
 
 ## Copyright and license
 
-Copyright 2014 Mark Otto. Released under Apache 2.0.
+Origina Copyright 2014 Mark Otto, Adaptions Copyright 2014 Earthware Ltd. Released under Apache 2.0.
