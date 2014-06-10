@@ -16,22 +16,17 @@ These buttons are hosted via ButBucket Websites, meaning all you need to do is i
 
 ### Requirements
 
-`user`<br>
-BitBucket username that owns the repo
+`user` BitBucket username that owns the repo
 
-`repo`<br>
-BitBucket repository to pull the forks and watchers counts
+`repo` BitBucket repository to pull the forks and watchers counts
 
-`type`<br>
-Type of button to show: `watch`, `fork`, or `follow`
+`type` Type of button to show: `watch`, `fork`, or `follow`
 
 ### Optional
 
-`count`<br>
-Show the optional watchers or forks count: *none* by default or `true`
+`count` Show the optional watchers or forks count: *none* by default or `true`
 
-`size`<br>
-Optional flag for using a larger button: *none* by default or `large`
+`size` Optional flag for using a larger button: *none* by default or `large`
 
 
 
@@ -104,4 +99,4 @@ Optional flag for using a larger button: *none* by default or `large`
 
 ## Copyright and license
 
-Origina Copyright 2014 Mark Otto, Adaptions Copyright 2014 Earthware Ltd. Released under Apache 2.0.
+Original Copyright 2014 Mark Otto, Adaptions Copyright 2014 Earthware Ltd. Released under Apache 2.0.
