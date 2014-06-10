@@ -1,0 +1,235 @@
+<html><body><style type="text/css">
+body {
+  padding: 0;
+  margin: 0;
+  font: bold 11px/14px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  overflow: hidden;
+}
+.bitbucket-btn {
+  height: 20px;
+  overflow: hidden;
+}
+.bb-btn,
+.bb-count,
+.bb-ico {
+  float: left;
+}
+.bb-btn,
+.bb-count {
+  padding: 2px 5px 2px 4px;
+  color: #333;
+  text-decoration: none;
+  text-shadow: 0 1px 0 #fff;
+  white-space: nowrap;
+  cursor: pointer;
+  border-radius: 3px;
+}
+.bb-btn {
+  background-color: #e6e6e6;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fafafa), to(#eaeaea));
+  background-image: -webkit-linear-gradient(#fafafa, #eaeaea);
+  background-image: -moz-linear-gradient(top, #fafafa, #eaeaea);
+  background-image: -ms-linear-gradient(#fafafa, #eaeaea);
+  background-image: -o-linear-gradient(#fafafa, #eaeaea);
+  background-image: linear-gradient(#fafafa, #eaeaea);
+  background-repeat: no-repeat;
+  border: 1px solid #d4d4d4;
+  border-bottom-color: #bcbcbc;
+}
+.bb-btn:hover,
+.bb-btn:focus,
+.bb-btn:active {
+  color: #fff;
+  text-decoration: none;
+  text-shadow: 0 -1px 0 rgba(0,0,0,.25);
+  border-color: #518cc6 #518cc6 #2a65a0;
+  background-color: #3072b3;
+}
+.bb-btn:hover,
+.bb-btn:focus {
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#599bdc), to(#3072b3));
+  background-image: -webkit-linear-gradient(#599bdc, #3072b3);
+  background-image: -moz-linear-gradient(top, #599bdc, #3072b3);
+  background-image: -ms-linear-gradient(#599bdc, #3072b3);
+  background-image: -o-linear-gradient(#599bdc, #3072b3);
+  background-image: linear-gradient(#599bdc, #3072b3);
+}
+.bb-btn:active {
+  background-image: none;
+  -webkit-box-shadow: inset 0 2px 5px rgba(0,0,0,.10);
+     -moz-box-shadow: inset 0 2px 5px rgba(0,0,0,.10);
+          box-shadow: inset 0 2px 5px rgba(0,0,0,.10);
+}
+.bb-ico {
+  width: 14px;
+  height: 14px;
+  margin-right: 4px;
+  vertical-align: 3px;
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNS4wLjIsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4KCjxzdmcKICAgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIgogICB4bWxuczpjYz0iaHR0cDovL2NyZWF0aXZlY29tbW9ucy5vcmcvbnMjIgogICB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiCiAgIHhtbG5zOnN2Zz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCiAgIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIKICAgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiCiAgIHhtbG5zOnNvZGlwb2RpPSJodHRwOi8vc29kaXBvZGkuc291cmNlZm9yZ2UubmV0L0RURC9zb2RpcG9kaS0wLmR0ZCIKICAgeG1sbnM6aW5rc2NhcGU9Imh0dHA6Ly93d3cuaW5rc2NhcGUub3JnL25hbWVzcGFjZXMvaW5rc2NhcGUiCiAgIHZlcnNpb249IjEuMSIKICAgaWQ9Ikljb24iCiAgIHg9IjBweCIKICAgeT0iMHB4IgogICB2aWV3Qm94PSIwIDAgMTMyIDY2IgogICBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA2MTEgNjExIgogICB4bWw6c3BhY2U9InByZXNlcnZlIgogICBpbmtzY2FwZTp2ZXJzaW9uPSIwLjQ4LjQgcjk5MzkiCiAgIHdpZHRoPSIxMDAlIgogICBoZWlnaHQ9IjEwMCUiCiAgIHNvZGlwb2RpOmRvY25hbWU9InNvdXJjZWljb24uc3ZnIj48bWV0YWRhdGEKICAgaWQ9Im1ldGFkYXRhMzA3MyI+PHJkZjpSREY+PGNjOldvcmsKICAgICAgIHJkZjphYm91dD0iIj48ZGM6Zm9ybWF0PmltYWdlL3N2Zyt4bWw8L2RjOmZvcm1hdD48ZGM6dHlwZQogICAgICAgICByZGY6cmVzb3VyY2U9Imh0dHA6Ly9wdXJsLm9yZy9kYy9kY21pdHlwZS9TdGlsbEltYWdlIiAvPjwvY2M6V29yaz48L3JkZjpSREY+PC9tZXRhZGF0YT48ZGVmcwogICBpZD0iZGVmczMwNzEiPjxsaW5lYXJHcmFkaWVudAogICAgIGlua3NjYXBlOmNvbGxlY3Q9ImFsd2F5cyIKICAgICB4bGluazpocmVmPSIjU1ZHSURfM18iCiAgICAgaWQ9ImxpbmVhckdyYWRpZW50MzEwNiIKICAgICBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIKICAgICBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KDAuMTAxNjMxOCwwLDAsLTAuMDk5MjQ5NDMsMS43NDYyOTAzLDU0LjU0MTQyOSkiCiAgICAgeDE9IjI0Mi4wNjc5IgogICAgIHkxPSIyMjMuMzg2MiIKICAgICB4Mj0iMzcwLjI1NTg5IgogICAgIHkyPSIyMjMuMzg2MiIgLz48L2RlZnM+PHNvZGlwb2RpOm5hbWVkdmlldwogICBwYWdlY29sb3I9IiMwMDAwMDAiCiAgIGJvcmRlcmNvbG9yPSIjNjY2NjY2IgogICBib3JkZXJvcGFjaXR5PSIxIgogICBvYmplY3R0b2xlcmFuY2U9IjEwIgogICBncmlkdG9sZXJhbmNlPSIxMCIKICAgZ3VpZGV0b2xlcmFuY2U9IjEwIgogICBpbmtzY2FwZTpwYWdlb3BhY2l0eT0iMCIKICAgaW5rc2NhcGU6cGFnZXNoYWRvdz0iMiIKICAgaW5rc2NhcGU6d2luZG93LXdpZHRoPSIxMzY2IgogICBpbmtzY2FwZTp3aW5kb3ctaGVpZ2h0PSI3MDUiCiAgIGlkPSJuYW1lZHZpZXczMDY5IgogICBzaG93Z3JpZD0iZmFsc2UiCiAgIHNob3dndWlkZXM9InRydWUiCiAgIGlua3NjYXBlOmd1aWRlLWJib3g9InRydWUiCiAgIGlua3NjYXBlOnpvb209IjgiCiAgIGlua3NjYXBlOmN4PSI3My4wMTMxMzciCiAgIGlua3NjYXBlOmN5PSIzMy41OTE2ODYiCiAgIGlua3NjYXBlOndpbmRvdy14PSItOCIKICAgaW5rc2NhcGU6d2luZG93LXk9Ii04IgogICBpbmtzY2FwZTp3aW5kb3ctbWF4aW1pemVkPSIxIgogICBpbmtzY2FwZTpjdXJyZW50LWxheWVyPSJJY29uIj48c29kaXBvZGk6Z3VpZGUKICAgICBvcmllbnRhdGlvbj0iMSwwIgogICAgIHBvc2l0aW9uPSI2NiwxNSIKICAgICBpZD0iZ3VpZGUzMDc1IiAvPjwvc29kaXBvZGk6bmFtZWR2aWV3Pgo8bGluZWFyR3JhZGllbnQKICAgaWQ9IlNWR0lEXzFfIgogICBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIKICAgeDE9IjM0Mi43NzczMSIKICAgeTE9IjMxNC4yNzgyOSIKICAgeDI9IjM0Mi43NzczMSIKICAgeTI9IjMwMi43NzgyOSIKICAgZ3JhZGllbnRUcmFuc2Zvcm09Im1hdHJpeCg1LjM5MDQwODQsMCwwLC01LjI2NDA1MDksLTE4MTQuODYxOCwxNjU3LjMxMzYpIj4KCTxzdG9wCiAgIG9mZnNldD0iMCIKICAgc3R5bGU9InN0b3AtY29sb3I6IzAwNDg4OSIKICAgaWQ9InN0b3AzMDQzIiAvPgoJPHN0b3AKICAgb2Zmc2V0PSIxIgogICBzdHlsZT0ic3RvcC1jb2xvcjojMDAzNDZFIgogICBpZD0ic3RvcDMwNDUiIC8+CjwvbGluZWFyR3JhZGllbnQ+Cgo8cGF0aAogICBzdHlsZT0iZmlsbDojMzMzMzMzO2ZpbGwtb3BhY2l0eToxIgogICBkPSJNIDMwLjc2OTcyMiwxLjM0NzY5IEMgMjguMzYyMDc2LDEuMzkwMDYzMSAyNS45Njk4MTQsMS41MjI3NDQyIDIzLjU4MDAzMywxLjcyNzY2NCAxOS4wNzg0NzEsMi4xMzc5NzM5IDE0LjYxNzEwMiwyLjg3Mjc2NjEgMTAuMzM4MjY0LDQuMjE4NjA1MiA3LjE5NDA2NjYsNS4zNjkwODAzIDIuODk5MTgxMSw2Ljc1MzYxNCAyLjM3NSwxMC4yMTM3NTEgYyAxLjA1NjM1MjYsNy45MzQ1MTggMi44NDk5NzU2LDE1LjgyMTMxNiA0LjIzMTkwNiwyMy43MjcyNzIgMC41MTY0ODUxLDIuMjUwNzk5IDAuMzgyMzI4NCw1LjAwNTc2IDIuNjg0NzU3Niw2LjUwMTc3OCA0LjcwMDAxODQsMy40MDk4NTUgMTAuODExMjA5NCw0LjYyOTg5IDE2LjY1NDU5NTQsNS4zMTk2MzggOC43MDk1MTQsMC43NjMyMjcgMTcuODkxNTY2LDAuMTY4NTM5IDI1Ljg0NjQ3OSwtMy4zNzc1NDggMi4xODMyOTgsLTEuMTAwNTkzIDQuODE2MjU3LC0yLjQzMTU4NiA1LjMyNDAxMSwtNC44NTUyMjMgQyA1OC43MTIwODQsMjkuMTQ5MDQgNjAuMzExODEsMjAuNzY5MDE5IDYxLjgwMzY5OCwxMi4zNjY5MzkgNjEuOTYzNTI3LDExLjAzNjM4NiA2Mi40MTI0MDksOS40OTI2Mjc5IDYxLjM0ODY1NSw4LjM1NjEwMDkgNTkuMTU2NjI1LDUuNzUyNTE0NCA1NS41MTI4MTYsNC42NDA2ODI1IDUyLjIwMjI3NywzLjY2OTc1MzggNDUuMjQ2OTI5LDEuODgzOTA0IDM3Ljk5MjY2MSwxLjIyMDU2ODggMzAuNzY5NzIyLDEuMzQ3NjkgeiBtIDEuMTM3NjEsNC4zNDg1OTIzIGMgNC4wMTYzNzgsLTAuMDAzNTMgOC4wNDM0NjUsMC4yNjYwODk4IDEyLjAxMzE1MiwwLjgwMjE2NzUgMi43NzEyNjEsMC40OTU4NTY0IDUuOTM5MDY2LDAuODQ1OTgyNCA3Ljc4MTI0NSwzLjAzOTc5MjcgQyA0OS4wODE3MTQsMTEuOTMzNzI0IDQ1LjE1OTUxLDEyLjEwOTUxMyA0MS42OTA3NjksMTIuNjIwMjU2IDM1LjM4NTgsMTMuMjM5MDcxIDI5LjAxOTUzMiwxMy4yMDM5NDUgMjIuNzE1NDUxLDEyLjU3ODAyOCAxOS4yMzc5NzgsMTIuMTAzODk0IDE1LjM1ODYyMywxMS44NDAyNTYgMTIuNjU4OTg2LDkuNTM4MjM2OSAxNC4yOTUzMTMsNy40MDkwNTY2IDE3LjMwNjI3OCw3LjA3OTQwOTIgMTkuODk0MTgsNi41ODI4ODI3IDIzLjg2MDAxOCw2LjAxMDg2MjcgMjcuODkwOTU0LDUuNjk5Nzk4NyAzMS45MDczMzIsNS42OTYyNzY2IHogTSAzMS42Nzk4MSwyMi44MzczMzUgYyA0LjcwNTEyNiwtMC4xODY5MjIgOS40NzQzMzUsMy4wNTQ1MDMgOS45MTk5NTEsNy40NzI4MjUgMC44NTc3NTEsNC42NzU5MTEgLTMuMzU1MTg5LDkuNDIzMzY3IC04LjU1NDgyMSw5LjcxMDQ0OCAtNS4xNDQ0MzMsMC41NTQ0NTMgLTEwLjIxMjIwOSwtMy40MDk0MTkgLTEwLjI4Mzk4NiwtOC4xMDYxMTQgLTAuMzA5MDAzLC0zLjUzMjAwOSAyLjE2MDkyMywtNy4wNTU1NDIgNS43MzM1NTEsLTguNDAxNjUgMS4wMjcxNzksLTAuNDM5NjQ3IDIuMDk5NTA3LC0wLjYzMjM3MyAzLjE4NTMwNSwtMC42NzU1MDkgeiBtIDAuNTQ2MDUyLDQuMjY0MTU0IGMgLTAuNzgzNTQsLTAuMDIzMjEgLTEuNTY4NDU1LDAuMTYwMzMyIC0yLjI3NTIxOCwwLjU0ODg1MSAtMy4zMjY1MTEsMS4zODc5NDQgLTMuMjkxMTU4LDYuMjc1OTAxIDAuMDkxMDEsNy41OTk0ODIgMy4wMzMwNTgsMS42NDY0NjUgNy4zNTUyMzYsLTAuODk0MDYgNi44NzExNiwtNC4wOTUyNzYgMC4wMTE1NiwtMi4yNDk2NTkgLTIuMzM2MzI5LC0zLjk4MzQ2NiAtNC42ODY5NSwtNC4wNTMwNTcgeiBtIC0yMS41MjM1NjQsMTguMTU0MzE4IC0wLjcyODA2OTEsMC4yOTU1MzUgLTAuMjczMDI2OCwwLjYzMzI5IGMgMC42NzQyNDE5LDMuNzQ3NzU3IDEuMzMxNDAzOSw3LjU2MTk3IDIuNDExNzMxOSwxMS4yMzAzNDYgMi40MDU4NzUsMy43ODQ0OTUgNy42MzgyNjcsNC44ODYzNTEgMTIuMDEzMTUyLDUuNzQxODI5IDguMzY3NjU0LDEuMTk0NTkgMTcuNTMwMjkyLDAuOTc4MDc4IDI1LjA3MjkwMywtMi44NzA5MTQgNC40NzgzMjksLTIuMTM2NDIxIDMuNzUyODIxLC03LjI1NjYwOSA0Ljk1OTk3NywtMTEuMDE5MjQ5IDAuMDIzNTMsLTEuMjcyODk3IDEuNDg0NDQzLC0zLjQ5Mjk5IC0wLjUwMDU0OCwtNC4wMTA4MzcgLTEyLjY0ODI3MSw3LjU1MzUxNCAtMzAuMzE2NzI5LDcuNTYxMDc4IC00Mi45NTYxMiwwIHoiCiAgIGlkPSJwYXRoMzA0OSIKICAgaW5rc2NhcGU6Y29ubmVjdG9yLWN1cnZhdHVyZT0iMCIgLz4KPGxpbmVhckdyYWRpZW50CiAgIGlkPSJTVkdJRF8yXyIKICAgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiCiAgIHgxPSIxNzQuMTY2IgogICB5MT0iMzg3Ljg4MjgxIgogICB4Mj0iNDM4LjAwODc5IgogICB5Mj0iMzg3Ljg4MjgxIgogICBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KDAuMTAxNjMxOCwwLDAsLTAuMDk5MjQ5NDMsMS43NDYyOTAzLDU0LjU0MTQyOSkiPgoJPHN0b3AKICAgb2Zmc2V0PSIwIgogICBzdHlsZT0ic3RvcC1jb2xvcjojMDA0ODg5IgogICBpZD0ic3RvcDMwNTIiIC8+Cgk8c3RvcAogICBvZmZzZXQ9IjEiCiAgIHN0eWxlPSJzdG9wLWNvbG9yOiMwMDM0NkUiCiAgIGlkPSJzdG9wMzA1NCIgLz4KPC9saW5lYXJHcmFkaWVudD4KCjxsaW5lYXJHcmFkaWVudAogICBpZD0iU1ZHSURfM18iCiAgIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIgogICB4MT0iMjQyLjA2NzkiCiAgIHkxPSIyMjMuMzg2MiIKICAgeDI9IjM3MC4yNTU4OSIKICAgeTI9IjIyMy4zODYyIgogICBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KDAuMTAxNjMxOCwwLDAsLTAuMDk5MjQ5NDMsMS43NDYyOTAzLDU0LjU0MTQyOSkiPgoJPHN0b3AKICAgb2Zmc2V0PSIwIgogICBzdHlsZT0ic3RvcC1jb2xvcjojMDA0ODg5IgogICBpZD0ic3RvcDMwNTkiIC8+Cgk8c3RvcAogICBvZmZzZXQ9IjEiCiAgIHN0eWxlPSJzdG9wLWNvbG9yOiMwMDM0NkUiCiAgIGlkPSJzdG9wMzA2MSIgLz4KPC9saW5lYXJHcmFkaWVudD4KCgoKPHBhdGgKICAgc3R5bGU9ImZpbGw6I2ZmZmZmZjtmaWxsLW9wYWNpdHk6MSIKICAgZD0ibSA5OC41NjQ3MSwxLjUzMjA0MDQgYyAtMi40MDc2NCwwLjA0MjM3MyAtNC43OTk5MSwwLjE3NTA1NDIgLTcuMTg5NjksMC4zNzk5NzQgLTQuNTAxNTYsMC40MTAzMDk5IC04Ljk2MjkyOSwxLjE0NTEwMjEgLTEzLjI0MTc2NywyLjQ5MDk0MTIgLTMuMTQ0MTk4LDEuMTUwNDc1MSAtNy40MzkwODMsMi41MzUwMDg4IC03Ljk2MzI2NCw1Ljk5NTE0NTQgMS4wNTYzNTIsNy45MzQ1MTggMi44NDk5NzUsMTUuODIxMzE2IDQuMjMxOTA2LDIzLjcyNzI3MiAwLjUxNjQ4NSwyLjI1MDc5OSAwLjM4MjMyOCw1LjAwNTc2IDIuNjg0NzU3LDYuNTAxNzc4IDQuNzAwMDE5LDMuNDA5ODU1IDEwLjgxMTIxLDQuNjI5ODkgMTYuNjU0NTk4LDUuMzE5NjM4IDguNzA5NTEsMC43NjMyMjcgMTcuODkxNTYsMC4xNjg1MzkgMjUuODQ2NDgsLTMuMzc3NTQ4IDIuMTgzMywtMS4xMDA1OTMgNC44MTYyNSwtMi40MzE1ODYgNS4zMjQwMSwtNC44NTUyMjMgMS41OTUzMywtOC4zODA2MjggMy4xOTUwNiwtMTYuNzYwNjQ5IDQuNjg2OTUsLTI1LjE2MjcyOSAwLjE1OTgzLC0xLjMzMDU1MyAwLjYwODcxLC0yLjg3NDMxMDcgLTAuNDU1MDUsLTQuMDEwODM3NyAtMi4xOTIwMywtMi42MDM1ODY1IC01LjgzNTgzLC0zLjcxNTQxODQgLTkuMTQ2MzcsLTQuNjg2MzQ3MSAtNi45NTUzNSwtMS43ODU4NDk4IC0xNC4yMDk2MiwtMi40NDkxODUgLTIxLjQzMjU2LC0yLjMyMjA2MzggeiBtIDEuMTM3NjEsNC4zNDg1OTIzIGMgNC4wMTYzOCwtMC4wMDM1MyA4LjA0MzQ3LDAuMjY2MDg5OCAxMi4wMTMxNSwwLjgwMjE2NzUgMi43NzEyNiwwLjQ5NTg1NjQgNS45MzkwNywwLjg0NTk4MjQgNy43ODEyNSwzLjAzOTc5MjcgLTIuNjIwMDIsMi4zOTU0ODExIC02LjU0MjIyLDIuNTcxMjcwMSAtMTAuMDEwOTYsMy4wODIwMTMxIC02LjMwNDk3LDAuNjE4ODE1IC0xMi42NzEyNCwwLjU4MzY4OSAtMTguOTc1MzIsLTAuMDQyMjMgQyA4Ny4wMzI5NjcsMTIuMjg4MjQ0IDgzLjE1MzYxMiwxMi4wMjQ2MDYgODAuNDUzOTc1LDkuNzIyNTg3MyA4Mi4wOTAzMDIsNy41OTM0MDcgODUuMTAxMjY3LDcuMjYzNzU5NiA4Ny42ODkxNjksNi43NjcyMzMxIDkxLjY1NTAxLDYuMTk1MjEzMSA5NS42ODU5NCw1Ljg4NDE0OTEgOTkuNzAyMzIsNS44ODA2MjcgeiBNIDk5LjQ3NDgsMjMuMDIxNjg1IGMgNC43MDUxMywtMC4xODY5MjIgOS40NzQzMywzLjA1NDUwMyA5LjkxOTk1LDcuNDcyODI1IDAuODU3NzUsNC42NzU5MTEgLTMuMzU1MTksOS40MjMzNjcgLTguNTU0ODIsOS43MTA0NDggLTUuMTQ0NDMsMC41NTQ0NTMgLTEwLjIxMjIxLC0zLjQwOTQxOSAtMTAuMjgzOTksLTguMTA2MTE0IC0wLjMwOSwtMy41MzIwMDkgMi4xNjA5MywtNy4wNTU1NDIgNS43MzM1NSwtOC40MDE2NSAxLjAyNzE4LC0wLjQzOTY0NyAyLjA5OTUxLC0wLjYzMjM3MyAzLjE4NTMxLC0wLjY3NTUwOSB6IG0gMC41NDYwNSw0LjI2NDE1NCBjIC0wLjc4MzU0LC0wLjAyMzIxIC0xLjU2ODQ1LDAuMTYwMzMyIC0yLjI3NTIyLDAuNTQ4ODUxIC0zLjMyNjUxLDEuMzg3OTQ0IC0zLjI5MTE1LDYuMjc1OTAxIDAuMDkxLDcuNTk5NDgyIDMuMDMzMDYsMS42NDY0NjUgNy4zNTUyNCwtMC44OTQwNiA2Ljg3MTE2LC00LjA5NTI3NiAwLjAxMTYsLTIuMjQ5NjU5IC0yLjMzNjMzLC0zLjk4MzQ2NiAtNC42ODY5NSwtNC4wNTMwNTcgeiBtIC0yMS41MjM1NjMsMTguMTU0MzE4IC0wLjcyODA3LDAuMjk1NTM1IC0wLjI3MzAyNiwwLjYzMzI5IGMgMC42NzQyNDIsMy43NDc3NTcgMS4zMzE0MDQsNy41NjE5NyAyLjQxMTczMiwxMS4yMzAzNDYgMi40MDU4NzUsMy43ODQ0OTUgNy42MzgyNjcsNC44ODYzNTEgMTIuMDEzMTU3LDUuNzQxODI5IDguMzY3NjUsMS4xOTQ1OSAxNy41MzAyOSwwLjk3ODA3OCAyNS4wNzI5LC0yLjg3MDkxNCA0LjQ3ODMzLC0yLjEzNjQyMSAzLjc1MjgyLC03LjI1NjYwOSA0Ljk1OTk4LC0xMS4wMTkyNDkgMC4wMjM1LC0xLjI3Mjg5NyAxLjQ4NDQ0LC0zLjQ5Mjk5IC0wLjUwMDU1LC00LjAxMDgzNyAtMTIuNjQ4MjcsNy41NTM1MTQgLTMwLjMxNjczLDcuNTYxMDc4IC00Mi45NTYxMjMsMCB6IgogICBpZD0icGF0aDMwNDktNyIKICAgaW5rc2NhcGU6Y29ubmVjdG9yLWN1cnZhdHVyZT0iMCIgLz48L3N2Zz4=);
+  background-size: 28px 14px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+.bb-btn:hover .bb-ico,
+.bb-btn:focus .bb-ico,
+.bb-btn:active .bb-ico {
+  background-position: -14px 0;
+}
+.bb-count {
+  position: relative;
+  display: none; /* hidden to start */
+  margin-left: 4px;
+  background-color: #fafafa;
+  border: 1px solid #d4d4d4;
+}
+.bb-count:hover,
+.bb-count:focus {
+  color: #4183C4;
+}
+.bb-count:before,
+.bb-count:after {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+}
+.bb-count:before {
+  top: 50%;
+  left: -3px;
+  margin-top: -4px;
+  border-width: 4px 4px 4px 0;
+  border-right-color: #fafafa;
+}
+.bb-count:after {
+  top: 50%;
+  left: -4px;
+  z-index: -1;
+  margin-top: -5px;
+  border-width: 5px 5px 5px 0;
+  border-right-color: #d4d4d4;
+}
+.bitbucket-btn-large {
+  height: 30px;
+}
+.bitbucket-btn-large .bb-btn,
+.bitbucket-btn-large .bb-count {
+  padding: 3px 10px 3px 8px;
+  font-size: 16px;
+  line-height: 22px;
+  border-radius: 4px;
+}
+.bitbucket-btn-large .bb-ico {
+  width: 20px;
+  height: 20px;
+  background-size: 40px 20px;
+}
+.bitbucket-btn-large .bb-btn:hover .bb-ico,
+.bitbucket-btn-large .bb-btn:focus .bb-ico,
+.bitbucket-btn-large .bb-btn:active .bb-ico {
+  background-position: -20px 0;
+}
+.bitbucket-btn-large .bb-count {
+  margin-left: 6px;
+}
+.bitbucket-btn-large .bb-count:before {
+  left: -5px;
+  margin-top: -6px;
+  border-width: 6px 6px 6px 0;
+}
+.bitbucket-btn-large .bb-count:after {
+  left: -6px;
+  margin-top: -7px;
+  border-width: 7px 7px 7px 0;
+}
+</style>
+<span class="bitbucket-btn" id="bitbucket-btn">
+  <a class="bb-btn" id="bb-btn" href="#" target="_blank">
+    <span class="bb-ico"></span>
+    <span class="bb-text" id="bb-text"></span>
+  </a>
+  <a class="bb-count" id="bb-count" href="#" target="_blank"></a>
+</span>
+<script>
+    // Read a page's GET URL variables and return them as an associative array.
+    // Source: http://jquery-howto.blogspot.com/2009/09/get-url-parameters-values-with-jquery.html
+    var params = function () {
+        var vars = [], hash;
+        var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+        for (var i = 0; i < hashes.length; i++) {
+            hash = hashes[i].split('=');
+            vars.push(hash[0]);
+            vars[hash[0]] = hash[1];
+        }
+        return vars;
+    }();
+    var user = params.user,
+        repo = params.repo,
+        type = params.type,
+        count = params.count,
+        size = params.size,
+        head = document.getElementsByTagName('head')[0],
+        button = document.getElementById('bb-btn'),
+        mainButton = document.getElementById('bitbucket-btn'),
+        text = document.getElementById('bb-text'),
+        counter = document.getElementById('bb-count');
+
+
+    // Add commas to numbers
+    function addCommas(n) {
+        return String(n).replace(/(\d)(?=(\d{3})+$)/g, '$1,')
+    }
+
+    function jsonp(path) {
+        var el = document.createElement('script');
+        el.src = path + '?callback=callback';
+        head.insertBefore(el, head.firstChild);
+    }
+
+    function callback(obj) {
+        if (type == 'watch') {
+            counter.innerHTML = addCommas(obj.followers_count);
+        } else if (type == 'fork') {
+            counter.innerHTML = addCommas(obj.forks_count);
+        } else if (type == 'follow') {
+            counter.innerHTML = addCommas(obj.followers_count);
+        }
+
+        // Show the count if asked
+        if (count == 'true') {
+            counter.style.display = 'block';
+        }
+    }
+
+    // Set href to be URL for repo
+    button.href = 'https://bitbucket.com/' + user + '/' + repo + '/';
+
+    // Add the class, change the text label, set count link href
+    if (type == 'watch') {
+        mainButton.className += ' bitbucket-watchers';
+        text.innerHTML = 'Follow';
+        counter.href = 'https://bitbucket.com/' + user + '/' + repo + '#followers';
+    } else if (type == 'fork') {
+        mainButton.className += ' bitbucket-forks';
+        text.innerHTML = 'Fork';
+        counter.href = 'https://bitbucket.com/' + user + '/' + repo + '#forks';
+    } else if (type == 'follow') {
+        mainButton.className += ' bitbucket-me';
+        text.innerHTML = 'Follow @' + user;
+        button.href = 'https://bitbucket.com/' + user;
+        counter.href = 'https://bitbucket.com/' + user + '/profile/followers';
+    }
+
+    // Change the size
+    if (size == 'large') {
+        mainButton.className += ' bitbucket-btn-large';
+    }
+
+    if (type == 'follow') {
+        jsonp('https://bitbucket.org/api/1.0/users/' + user + '/followers');
+    } else {
+        jsonp('https://bitbucket.org/api/1.0/repositories/' + user + '/' + repo);
+    }
+</script></body></html>
